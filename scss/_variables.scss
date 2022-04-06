@@ -1,0 +1,15 @@
+@mixin flex($direction,$align,$justify){
+    display:flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+};
+
+$colors:(
+    green:#006039,
+    gold:#A37E2C
+);
+
+@keyframes popup {
+    100%{transform: scale(1.1);}
+}

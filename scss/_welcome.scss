@@ -1,0 +1,35 @@
+.welcome{
+    height:58vw;
+    @include flex(row,center,center);
+
+    .welcome-image{
+        height:40vw;
+    }
+
+    .welcome-text{
+        width: 40vw;
+        height: 40vw;
+
+        h1{
+            font-size: 5vw;
+            margin-top:5vw;
+            margin-bottom:2vw;
+        }
+
+        button{
+            height: 4vw;
+            width: 10vw;
+            margin-top:1vw;
+            border:none;
+            color:white;
+            background-color:map-get($colors,green);
+            border-radius:40px;
+            font-size:1vw;
+
+            &:hover{
+                color:map-get($colors,green);
+                background-color:map-get($colors,gold);
+            }
+        }
+    }
+}

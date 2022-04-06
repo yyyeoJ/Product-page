@@ -1,0 +1,30 @@
+@import './_variables';
+@import './_header';
+@import './_welcome';
+@import './_about';
+@import './_models';
+@import './_galery';
+@import './_features';
+@import './_footer';
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Cormorant Garamond', serif;
+
+    h2{
+        font-size:4vw;
+    }
+    p{
+        font-size:2vw;
+    }
+}

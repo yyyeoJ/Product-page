@@ -1,0 +1,42 @@
+.models-container{
+    @include flex(column,center,center);
+
+    h2{
+        position: relative;
+        font-size:5vw;
+        top:3vw;
+    }
+
+    .models{
+        @include flex(row,center,center);
+        background-color: white;
+        height:40vw;
+        gap:3vw;
+
+        .card{
+            background-color:rgb(231, 231, 231);
+            border-radius:50px;
+            width:20vw;
+            height:25vw;
+            @include flex(column,center,center);
+
+            &:hover{
+                animation:popup 0.2s ease-in-out;
+                animation-fill-mode:both;
+            }
+
+            p{
+                position:relative;
+                top:-1vw;
+                z-index:-5;
+                font-size:1.5vw;
+            }
+
+            img{
+                width:15vw;
+                height:25vw;
+            }
+        }
+    }
+
+}
